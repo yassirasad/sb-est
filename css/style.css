@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Changa&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Tajawal&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Amiri&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Lalezar&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=El+Messiri&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css?family=Mada&display=swap'); */
+
+body {
+    font-family: 'Changa', sans-serif;
+    /* font-family: 'Tajawal', sans-serif; */
+    /* font-family: 'Amiri', serif; */
+    /* font-family: 'Lalezar', cursive; */
+    /* font-family: 'El Messiri', sans-serif; */
+    /* font-family: 'Reem Kufi', sans-serif; */
+    /* font-family: 'Mada', sans-serif; */
+    background-color: #2C3E50;
+    color: #fffeee;
+}
+
+.navbar {
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    border-bottom: #20c997 2px solid;
+    opacity: 0.8;
+}
+
+#navbar-logo {
+    height: 50px;
+}
+
+.carousel-item {
+    max-height: 100vh;
+}
+
+.carousel-caption h3 {
+    font-size: 2.5vw;
+}
+
+.dark-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#home-inner {
+    padding-top: 110px;
+}
+
+#home-inner h1 {
+    font-size: 3.5vw;
+}
+
+#home-inner img {
+    max-width: 20vw;
+}
+
+#intro-objectives-section, .custom-card, #contact {
+    /* background-color: #2C3E50;
+    color: #fffeee; */
+    background-color: #fffeee;
+    color: #2C3E50;
+}
+
+#services-section {
+    background: url(../images/bg_squish_teal.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-image: linear-gradient(to bottom right, #20c997, #fffeee, #2C3E50); */
+    /* background-attachment: fixed; */
+}
+
+.custom-card {
+    width: 15rem;
+    height: 15rem;
+    box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.1),
+    -10px 0px 20px rgba(0, 0, 0, 0.1);
+    border: #fffeee 1px solid;
+}
+
+@media (max-width: 576px) {
+    .carousel-item {
+        height: 60vh;
+    }
+
+    .carousel-item img {
+        width: auto;
+        height: 100%;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.2rem;
+    }
+
+    #home-inner h1 {
+        font-size: 1.5rem;
+    }
+}
