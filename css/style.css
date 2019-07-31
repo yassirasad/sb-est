@@ -80,6 +80,24 @@ body {
     box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.1),
     -10px 0px 20px rgba(0, 0, 0, 0.1);
     border: #fffeee 1px solid;
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-card:hover {
+    height: auto;
+    cursor: pointer;
+    transform: scale(1.15);
+}
+
+.service-description {
+    font-size: 0.7rem;
+    margin-top: -0.7rem;
+    text-align: right;
+    display: none;
+}
+
+.custom-card:hover .service-description {
+    display: inline-block;
 }
 
 @media (max-width: 576px) {
