@@ -58,7 +58,7 @@ body {
     max-width: 20vw;
 }
 
-#intro-objectives-section, .custom-card, #contact {
+#intro-objectives-section, .custom-card-content, #contact {
     /* background-color: #2C3E50;
     color: #fffeee; */
     background-color: #fffeee;
@@ -75,18 +75,25 @@ body {
 }
 
 .custom-card {
+    position: relative;
     width: 15rem;
     height: 15rem;
+}
+
+.custom-card-content {
+    position: absolute;
+    height: 100%;
     box-shadow: 10px 0px 20px rgba(0, 0, 0, 0.1),
     -10px 0px 20px rgba(0, 0, 0, 0.1);
     border: #fffeee 1px solid;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.4s ease-in-out;
 }
 
-.custom-card:hover {
+.custom-card:hover .custom-card-content {
     height: auto;
     cursor: pointer;
     transform: scale(1.15);
+    z-index: 1;
 }
 
 .service-description {
